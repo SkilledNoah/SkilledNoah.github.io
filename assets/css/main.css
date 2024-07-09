@@ -22,19 +22,22 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #45505b; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  /*--accent-color: #0563bb; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #b56ef0;
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #45505b;  /* The default color of the main navmenu links */
-  --nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  /*--nav-hover-color: #0563bb; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #b56ef0;
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0563bb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #b56ef0; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -51,6 +54,59 @@
   --surface-color: #252525;
   --contrast-color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  background-color: #060606;
+
+}
+
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/clear-purple-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+
+}
+
+h1{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+
+
+
+
+
+
+
 
 /* Smooth scroll */
 :root {
@@ -499,7 +555,7 @@ section,
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
+  width: 200px;
   height: 3px;
   background: var(--accent-color);
   left: 0;
@@ -634,6 +690,7 @@ section,
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .skills .skills-filters li {
@@ -679,6 +736,7 @@ section,
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  
 }
 
 
@@ -690,6 +748,7 @@ section,
   display: flex;
   flex-wrap: wrap; /* Allows items to wrap if they overflow */
   justify-content: space-around; /* Adjusts spacing between items */
+  
 }
 
 .skills .skill {
@@ -848,6 +907,7 @@ section,
 --------------------------------------------------------------*/
 
 .portfolio .portfolio-filters {
+  padding-bottom: 50px;
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
@@ -900,13 +960,14 @@ section,
   border: 2px solid var(--accent-color);
   width: 100%; 
   text-align:left; 
+  border-radius: 15px;
+  
   
 }
 
 .portfolio .projects {
   display:flex;
   width:100%;
-  
   
 
 }
@@ -931,12 +992,13 @@ section,
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
+  
 }
 
 .button-container {
   align-items: center;
   padding-left: 350px; 
-  padding-top: 200px; 
+  padding-top: 150px; 
   padding-bottom: 30px;
   
 }
@@ -1430,9 +1492,3 @@ section,
 }
 
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
