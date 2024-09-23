@@ -939,9 +939,9 @@ section,
 }
 
 .button-container {
-  align-items: center;
-  padding-left: 350px; 
-  padding-top: 150px; 
+  display: flex;
+  justify-content: center; /* Align the button to the start (left) of the container */
+  padding-top: 20px;
   padding-bottom: 30px;
   
 }
